@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/typed.js" type="text/javascript"></script>
+  <script>
+  $(function(){
+
+    $("#typed").typed({
+      stringsElement: $('#typed-strings'),
+      typeSpeed: 30,
+      backDelay: 500,
+      loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+          });
+
+    $(".reset").click(function(){
+      $("#typed").typed('reset');
+    });
+
+  });
+
+function newTyped(){ /* A new typed object */ }
+
+function foo(){ console.log("Callback"); }
+
+</script>
+<script>
+  (function($) {
+  $(function() {
+    $('.toggle-overlay').click(function() {
+      $('aside').toggleClass('open');
+    });
+  });
+})(jQuery);
+</script>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Titillium+Web:300,400" rel="stylesheet" type="text/css">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/eli.css">
+  <style>
+  .typed-cursor{
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+  @-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  </style>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="container">
+    <div class="bg-container">
+    
+<button class="toggle-overlay animated flash purple"></button>
+
+
+<aside>
+  <div class="outer-close toggle-overlay">
+    <button class="close"></button>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#!">About</a></li>
+      <li><a href="https://medium.com/@spotj" target="_blank">Essays &amp; Rants</a></li>
+      <li><a href="moveup.html">MoveUp Development-Trek Racing</a></li>
+      <li><a href="#!">Something</a></li>
+    </ul>
+  </nav>
+</aside>
+
+    <div class="about">
+      <div class="seven columns">
+        <p class="aboutme-sect1">
+          My name is Scott Johnson. I’m a Kansas City based UX / interaction designer trying to make people's lives a little better by creating products and services people actually want to use. I specialize in fixing big gross messy business challenges through design. I enjoy meeting new dogs. Woof.
+        </p>
+        <p class="aboutme-sect2">
+          I have six years of design experience in health care, professional sports, streaming media, GIS &amp; digital advertising. I've worked in both startups and giant corporations where diversity has defined my career. I’m equally comfortable discussing design as I am business. My background is fairly atypical for a designer, but it's helped me become a more thoughtful and strategic thinker.
+          <br>
+          <br>
+          In my spare time, I play the drums, race bicycles, read nonfiction and occasionally take photos of things. I’m also about to finish up my master’s in interaction design.
+          <br>
+          <br>
+          Get in touch if you’d like to collaborate.
+        </p>
+        <div class="sm-icons">
+          <a href="mailto:scottajohnson6gmail.com"><i class="fa fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/spotj"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.behance.net/spotj"><i class="fa fa-behance"></i></a>
+          <a href="https://dribbble.com/SpotJ"><i class="fa fa-dribbble"></i></a>
+          <a href="https://twitter.com/SpotJ"><i class="fa fa-twitter"></i></a>
+        </div>
+        <hr>
+        <p class="aboutme-sect3">
+          <span class="lilheader">Types of work I do</span>
+          <br>
+          Idea concepting, design research, business strategy, heuristic evaluations, wireframing, design production, prototyping, basic front-end development, user testing
+        </p>
+        <hr>
+        <p class="aboutme-sect3">
+          <span class="lilheader">Tools I use</span>
+          <br>
+          Sharpies, sketch books, post-it notes, Sketch, InVision, Framer Studio, Adobe Creative Suite if I have to, Balsamiq, HTML5, CSS3, JQuery, Trello
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

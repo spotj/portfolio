@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/typed.js" type="text/javascript"></script>
+  <script>
+  $(function(){
+
+    $("#typed").typed({
+      stringsElement: $('#typed-strings'),
+      typeSpeed: 30,
+      backDelay: 500,
+      loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+          });
+
+    $(".reset").click(function(){
+      $("#typed").typed('reset');
+    });
+
+  });
+
+function newTyped(){ /* A new typed object */ }
+
+function foo(){ console.log("Callback"); }
+
+</script>
+<script>
+  (function($) {
+  $(function() {
+    $('.toggle-overlay').click(function() {
+      $('aside').toggleClass('open');
+    });
+  });
+})(jQuery);
+</script>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Titillium+Web:300,400" rel="stylesheet" type="text/css">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/eli.css">
+  <style>
+  .typed-cursor{
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+  @-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  </style>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="container">
+    <div class="bg-container">
+    
+<button class="toggle-overlay animated flash blue"></button>
+
+
+<aside>
+  <div class="outer-close toggle-overlay">
+    <button class="close"></button>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="https://medium.com/@spotj" target="_blank">Essays &amp; Rants</a></li>
+      <li><a href="#!">MoveUp Development-Trek Racing</a></li>
+      <li><a href="#!">Something</a></li>
+    </ul>
+  </nav>
+</aside>
+
+    <div class="project">
+      <h2 class="project-headline">MoveUp Development-Trek Racing</h2>
+      <div class="seven columns">
+        <p class="project-sub">
+          MoveUp Development-Trek Racing is a young cycling team in the Midwest focused on training the next generation of continental talent for the pro and elite amateur ranks.
+        </p>
+      </div>
+      <img src="images/projects/moveup/mu3.png" alt="" class="mu-main-img">
+      <div class="seven columns">
+        <p class="">
+          This project was a bit of a challenge because the site owner wanted to keep the Wordpress theme that was being used since it was interconnected with his coaching service website. As a result, I had to design within the constraints of what the theme could do…and what I could hack my way around. PHP is like gibberish to me so I was pretty limited with what I could change. Quick side note, trying to hunt down classes in someone else’s WP theme is like trying to find Waldo in a room full Waldos.
+        </p>
+      </div>
+      <img src="" alt="" class="mu-main-img">
+      <div class="seven columns">
+        <p class="">
+          The main goals of the site were to feature the team’s sponsors and drive traffic to coaching services on offer with good content marketing such as race recaps, training tips, equipment reviews, etc.
+        </p>        
+      </div>
+      <img src="" alt="" class="mu-main-img">
+    </div>
+  </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
