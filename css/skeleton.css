@@ -42,12 +42,13 @@
   width: 100%;
   margin: 0 auto;
   height: auto;
+  float: left;
 }
 
 .column,
 .columns {
   width: 100%;
-  float: left;
+  /*float: left;*/
   box-sizing: border-box;
 }
 
@@ -175,23 +176,21 @@ body {
 
 .copy {
   margin-left: 10%;
-  margin-right: 10%; }  
+  margin-right: 10%;
+}  
 
-/*.about {
-  height: 600px;
-  background-color: #eeeeee;
-} */
+.about {
+  padding-bottom: 80px;
+}
 
 .type-wrap {
   display: inline;
 }
 
 .aboutme-sect1 {
-  margin: 100px 0px 10px 130px;
+  margin-top: 100px;
   font-family: "Titillium Web", "Open Sans", "Helvetica", Arial, sans-serif;
-  font-size: 3.375rem;
   font-weight: 400;
-  line-height: 4.25rem;
   color: #666666;
 /*  background: -webkit-linear-gradient(90deg, #7d00d2, #004fd2);
   -webkit-background-clip: text;
@@ -199,11 +198,12 @@ body {
 }
 
 .aboutme-sect2 {
-  margin: 20px 0px 10px 130px;
+  margin-top: 20px;
 }
 
 .aboutme-sect3 {
-  margin: 10px 0px 30px 130px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .nav-links {
@@ -228,8 +228,7 @@ body {
 }
 
 .sm-icons {
-  margin-left: 130px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 i {
@@ -238,7 +237,7 @@ i {
 
 .mu-main-img {
   display: block;
-  margin: auto;
+  margin: -50px auto 120px auto;
   zoom: 50%;
 }
 
@@ -289,7 +288,6 @@ nav {
 }
 
 nav ul {
-  margin-left: 130px;
   padding: 0;
   list-style: none;
 }
@@ -472,12 +470,12 @@ p {
   line-height: 2.1rem;
 }
 
-.project-headline {
-  margin-left: 130px;
+.proj-headline {
+  margin: 0 auto;
+  text-align: center;
 }
 
-.project-sub {
-  margin: 10px 0px 10px 130px;
+.proj-sub {
   font-family: "Titillium Web", "Open Sans", "Helvetica", Arial, sans-serif;
   font-size: 3.375rem;
   font-weight: 300;
@@ -698,7 +696,6 @@ blockquote,
 dl,
 figure,
 table,
-p,
 ul,
 ol,
 form {
@@ -722,9 +719,9 @@ form {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
-  margin: 10px 0px 30px 130px; 
+  margin: 10px auto 30px auto; 
   border-width: 0;
-  border-top: 1px solid #bbbbbb;
+  border-top: 1px solid #cccccc;
 }
 
 
@@ -751,16 +748,182 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+.mu-main-img {
+    zoom: 16%;
+  }
+
+  .copy {
+      padding-top: 50%;
+  }
+
+  .six.columns{
+    margin: 0 auto;
+    width: 88%;
+  }
+  
+  .about {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .aboutme-sect1, .proj-sub {
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+  }
+
+  h2 {
+    font-size: 5.063rem;
+  }
+
+  nav ul {
+    margin-left: 40px;
+  }
+
+}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+.mu-main-img {
+    zoom: 24%;
+  }
+  
+  .copy {
+      padding-top: 50%;
+  }
+  
+  .six.columns{
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .about {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .aboutme-sect1, .proj-sub {
+    font-size: 3.375rem;
+    line-height: 4.25rem;
+  }
+
+  h2 {
+    font-size: 5.063rem;
+  }
+
+  nav ul {
+    margin-left: 130px;
+  }
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+.mu-main-img {
+    zoom: 30%;
+  }
+
+  .copy {
+      padding-top: 40%;
+  }
+
+  .six.columns{
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .about {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  h2 {
+    font-size: 5.063rem;
+  }
+
+    nav ul {
+    margin-left: 130px;
+  }
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+  .mu-main-img {
+    zoom: 40%;
+  }
+  
+  .copy {
+      padding-top: 30%;
+  }
+
+  .six.columns{
+    margin: 0 auto;
+  }
+
+  .about {
+    padding-left: 40px;
+    padding-right: 120px;
+  }
+  
+  .aboutme-sect1 {
+    font-size: 3.375rem;
+    line-height: 4.25rem;
+  }
+
+  .aboutme-sect2 {
+    
+  }
+
+  .aboutme-sect3 {
+    
+  }
+
+  h2 {
+    font-size: 7.594rem;
+  }
+
+  nav ul {
+    margin-left: 130px;
+  }
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .mu-main-img {
+      zoom: 50%;
+  }
+
+  .copy {
+    padding-top: 20%;
+  }
+
+  .six.columns{
+    margin: 0 auto;
+  }
+
+  .about {
+    padding-left: 100px;
+    padding-right: 200px;
+  }
+
+  .aboutme-sect1 {
+    font-size: 3.375rem;
+    line-height: 4.25rem;
+  }
+
+  .aboutme-sect2 {
+      
+  }
+
+  .aboutme-sect3 {
+      
+  }
+
+  h2 {
+    font-size: 7.594rem;
+  }
+
+  nav ul {
+    margin-left: 130px;
+  }
+
+}
