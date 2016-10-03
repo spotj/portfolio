@@ -746,6 +746,43 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .mu-main-img {
+    zoom: 16%;
+  }
+
+  .copy {
+      padding-top: 50%;
+  }
+
+  .six.columns{
+    margin: 0 auto;
+    width: 88%;
+  }
+  
+  .about {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .aboutme-sect1, .proj-sub {
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  nav ul {
+    margin-left: 40px;
+  }
+}
 
 /* Larger than mobile */
 @media (min-width: 400px) {
@@ -857,6 +894,7 @@ there.
 
   .six.columns{
     margin: 0 auto;
+    width: 50%;
   }
 
   .about {
@@ -898,6 +936,7 @@ there.
 
   .six.columns{
     margin: 0 auto;
+    width: 50%;
   }
 
   .about {
