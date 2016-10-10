@@ -58,6 +58,7 @@
 /*    width: 85%; */
     padding: 0;
   }
+}
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
@@ -237,7 +238,6 @@ i {
 
 .mu-main-img {
   display: block;
-  margin: -50px auto 120px auto;
   zoom: 50%;
 }
 
@@ -335,7 +335,6 @@ nav ul li a:before {
 
 
 button {
-/*  margin: 40px 0px 0px 40px;*/
   position: fixed;
   top: 40px;
   left: 40px;
@@ -360,7 +359,6 @@ button.purple {
 button:hover {
   border: none;
 }
-
 
 .toggle-overlay.animated.flash {
   animation-duration: 1s;
@@ -452,7 +450,18 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   margin-bottom: 0;
 }
 
-/* Larger than phablet */
+@media (min-width: 320px) {
+  h1 { font-size: 5.063rem; }
+}
+
+@media (min-width: 375px) {
+  h1 { font-size: 7.594rem; }
+}
+
+@media (min-width: 400px) {
+  h1 { font-size: 7.594rem; }
+}
+
 @media (min-width: 550px) {
   h1 { font-size: 11.391rem; }
   h2 { font-size: 7.594rem; }
@@ -746,14 +755,16 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
-@media (max-width: 400px) {
+@media (min-width: 320px) {
   .container {
     width: 100%;
     padding: 0;
   }
-  
+
   .mu-main-img {
-    zoom: 16%;
+    zoom: 12%;
+    margin-left: 160px;
+    margin-bottom: 160px;
   }
 
   .copy {
@@ -771,8 +782,12 @@ there.
   }
 
   .aboutme-sect1, .proj-sub {
-    font-size: 2.25rem;
-    line-height: 3.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .proj-headline {
+    padding: 0 10px;
   }
 
   h2 {
@@ -782,12 +797,29 @@ there.
   nav ul {
     margin-left: 40px;
   }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
+
+@media (min-width: 375px) {
+  
+  .mu-main-img {
+    zoom: 14%;
+    margin-left: 180px;
+    margin-bottom: 160px;
+  }
+
+}
+
 
 /* Larger than mobile */
 @media (min-width: 400px) {
 .mu-main-img {
     zoom: 16%;
+    margin: -50px auto 120px auto;
   }
 
   .copy {
@@ -815,6 +847,11 @@ there.
 
   nav ul {
     margin-left: 40px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
   }
 
 }
@@ -965,4 +1002,39 @@ there.
     margin-left: 130px;
   }
 
+  .proj-sub {
+    font-size: 5.063rem;
+    line-height: 6rem;
+  }
+
+  .proj-descrip {
+    font-size: 2.25rem;
+    line-height: 3rem; 
+  }
+  
+  .mu-mobile {
+   zoom: 50%;
+  }
+
+  #mu-mobile1 {
+    float: left;
+    margin-left: 500px;
+    margin-right: 100px;
+  }
+
+  #mu-mobile2 {
+    margin-left: 100px;
+    margin-bottom: 50px;
+  }
+
+  .mu-img {
+    margin: 200px auto 50px auto;
+    display: block;
+    zoom: 70%;
+    
+  }
 }
+
+
+
+
