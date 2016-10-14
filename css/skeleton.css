@@ -802,6 +802,16 @@ there.
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .mu-mobile {
+   zoom: 36%;
+  }
+
+  #mu-mobile1 {
+    float: none;
+    display: block;
+    margin: 0 auto 40px auto;
+  }
 }
 
 @media (min-width: 375px) {
@@ -812,6 +822,15 @@ there.
     margin-bottom: 160px;
   }
 
+  .mu-mobile {
+   zoom: 37%;
+  }
+
+  #mu-mobile1 {
+    float: none;
+    display: block;
+    margin: 0 auto 40px auto;
+  }
 }
 
 
@@ -854,6 +873,15 @@ there.
     line-height: 2.1rem;
   }
 
+  .mu-mobile {
+   zoom: 38%;
+  }
+
+  #mu-mobile1 {
+    float: none;
+    display: block;
+    margin: 0 auto 40px auto;
+  }
 }
 
 /* Larger than phablet (also point when grid becomes active) */
@@ -888,12 +916,22 @@ there.
   nav ul {
     margin-left: 130px;
   }
+
+  .mu-mobile {
+   zoom: 30%;
+  }
+
+  #mu-mobile1 {
+    float: left;
+    margin-left: 400px;
+    margin-right: 100px;
+  }
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
 .mu-main-img {
-    zoom: 30%;
+    zoom: 33%;
   }
 
   .copy {
@@ -916,6 +954,16 @@ there.
 
     nav ul {
     margin-left: 130px;
+  }
+
+  .mu-mobile {
+   zoom: 40%;
+  }
+
+  #mu-mobile1 {
+    float: left;
+    margin-left: 400px;
+    margin-right: 100px;
   }
 }
 
@@ -958,6 +1006,16 @@ there.
 
   nav ul {
     margin-left: 130px;
+  }
+
+  .mu-mobile {
+   zoom: 45%;
+  }
+
+  #mu-mobile1 {
+    float: left;
+    margin-left: 400px;
+    margin-right: 100px;
   }
 }
 
