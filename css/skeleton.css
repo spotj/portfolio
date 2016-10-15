@@ -305,7 +305,6 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 1.5em;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: block;
@@ -782,8 +781,8 @@ there.
   }
 
   .aboutme-sect1, .proj-sub {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 2.4rem;
+    line-height: 3.25rem;
   }
 
   .proj-headline {
@@ -791,7 +790,7 @@ there.
   }
 
   h2 {
-    font-size: 2.25rem;
+    font-size: 3rem;
   }
 
   nav ul {
@@ -799,8 +798,8 @@ there.
   }
 
   p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
   }
 
   .mu-mobile {
@@ -811,6 +810,16 @@ there.
     float: none;
     display: block;
     margin: 0 auto 40px auto;
+  }
+
+  .mu-img {
+    margin: 60px auto 200px auto;
+    display: block;
+    zoom: 17%;
+  }
+
+  nav ul li a {
+    font-size: 1em;
   }
 }
 
@@ -830,6 +839,12 @@ there.
     float: none;
     display: block;
     margin: 0 auto 40px auto;
+  }
+
+  .mu-img {
+    margin: 60px auto 200px auto;
+    display: block;
+    zoom: 21%;
   }
 }
 
@@ -856,7 +871,7 @@ there.
   }
 
   .aboutme-sect1, .proj-sub {
-    font-size: 2.25rem;
+    font-size: 2.4rem;
     line-height: 3.25rem;
   }
 
@@ -882,12 +897,22 @@ there.
     display: block;
     margin: 0 auto 40px auto;
   }
+
+  .mu-img {
+    margin: 60px auto 200px auto;
+    display: block;
+    zoom: 24%;
+  }
+
+  nav ul li a {
+    font-size: 1.5em;
+  }
 }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
 .mu-main-img {
-    zoom: 24%;
+    zoom: 22%;
   }
   
   .copy {
@@ -926,12 +951,18 @@ there.
     margin-left: 400px;
     margin-right: 100px;
   }
+
+  .mu-img {
+    margin: 60px auto 200px auto;
+    display: block;
+    zoom: 32%;
+  }
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
 .mu-main-img {
-    zoom: 33%;
+    zoom: 31%;
   }
 
   .copy {
@@ -962,8 +993,14 @@ there.
 
   #mu-mobile1 {
     float: left;
-    margin-left: 400px;
+    margin-left: 300px;
     margin-right: 100px;
+  }
+
+  .mu-img {
+    margin: 100px auto 200px auto;
+    display: block;
+    zoom: 40%;
   }
 }
 
@@ -1016,6 +1053,12 @@ there.
     float: left;
     margin-left: 400px;
     margin-right: 100px;
+  }
+
+  .mu-img {
+    margin: 250px auto 200px auto;
+    display: block;
+    zoom: 60%;
   }
 }
 
@@ -1089,7 +1132,6 @@ there.
     margin: 200px auto 50px auto;
     display: block;
     zoom: 70%;
-    
   }
 }
 
