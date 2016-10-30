@@ -355,6 +355,10 @@ button.purple {
   background: url(../images/color2.svg) no-repeat;
 }
 
+button.bc2 {
+  background: url(../images/bc2.svg) no-repeat;
+}
+
 button:hover {
   border: none;
 }
@@ -1132,6 +1136,30 @@ there.
     margin: 200px auto 50px auto;
     display: block;
     zoom: 70%;
+  }
+
+  .bc-angle {
+    zoom: 70%;
+    display: block;
+    margin: auto;
+  }
+
+  .bc-teamcar, .bc-fan {
+    display: block;
+    margin: 40px auto 60px auto;
+    width: 100%;
+  }
+
+  .bc-fields {
+    display: block;
+    margin: 40px auto 60px auto;
+    zoom: 70%;
+  }
+
+  .bc-sketch {
+    display: block;
+    margin: 40px auto 60px auto;
+    zoom: 70%; 
   }
 }
 
