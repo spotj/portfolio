@@ -829,6 +829,34 @@ there.
   nav ul li a {
     font-size: 1em;
   }
+
+  #bc-fan-end {
+    margin-bottom: 0px;
+  }
+
+  .bc-teamcar, .bc-fan {
+    display: block;
+    margin: 40px auto 60px auto;
+    width: 100%;
+  }
+
+  .bc-angle {
+    zoom: 20%;
+    display: block;
+    margin: 80px auto;
+  }
+
+  .bc-fields {
+    display: block;
+    margin: 40px auto 40px auto;
+    zoom: 20%;
+  }
+
+  .bc-sketch {
+    display: block;
+    margin: 40px auto 60px auto;
+    zoom: 20%; 
+  }
 }
 
 @media (min-width: 375px) {
@@ -915,6 +943,24 @@ there.
   nav ul li a {
     font-size: 1.5em;
   }
+
+  .bc-angle {
+    zoom: 25%;
+    display: block;
+    margin: 80px auto;
+  }
+
+  .bc-fields {
+    display: block;
+    margin: 40px auto 40px auto;
+    zoom: 25%;
+  }
+
+  .bc-sketch {
+    display: block;
+    margin: 40px auto 60px auto;
+    zoom: 25%; 
+  }
 }
 
 /* Larger than phablet (also point when grid becomes active) */
@@ -965,6 +1011,24 @@ there.
     display: block;
     zoom: 32%;
   }
+
+  .bc-angle {
+    zoom: 30%;
+    display: block;
+    margin: 80px auto;
+  }
+
+  .bc-fields {
+    display: block;
+    margin: 40px auto 40px auto;
+    zoom: 30%;
+  }
+
+  .bc-sketch {
+    display: block;
+    margin: 40px auto 60px auto;
+    zoom: 30%; 
+  }
 }
 
 /* Larger than tablet */
@@ -1009,6 +1073,24 @@ there.
     margin: 100px auto 200px auto;
     display: block;
     zoom: 40%;
+  }
+
+  .bc-angle {
+    zoom: 40%;
+    display: block;
+    margin: 80px auto;
+  }
+
+  .bc-fields {
+    display: block;
+    margin: 40px auto 40px auto;
+    zoom: 40%;
+  }
+
+  .bc-sketch {
+    display: block;
+    margin: 40px auto 60px auto;
+    zoom: 40%; 
   }
 }
 
@@ -1067,6 +1149,24 @@ there.
     margin: 250px auto 200px auto;
     display: block;
     zoom: 60%;
+  }
+
+  .bc-angle {
+    zoom: 50%;
+    display: block;
+    margin: 80px auto;
+  }
+
+  .bc-fields {
+    display: block;
+    margin: 40px auto 40px auto;
+    zoom: 50%;
+  }
+
+  .bc-sketch {
+    display: block;
+    margin: 40px auto 60px auto;
+    zoom: 50%; 
   }
 }
 
@@ -1146,12 +1246,6 @@ there.
     zoom: 70%;
     display: block;
     margin: 80px auto;
-  }
-
-  .bc-teamcar, .bc-fan {
-    display: block;
-    margin: 40px auto 60px auto;
-    width: 100%;
   }
 
   .bc-fields {
